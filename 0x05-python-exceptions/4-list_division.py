@@ -4,6 +4,8 @@ def list_division(my_list_1, my_list_2, list_length):
 
     """Divides two lists element by element.
 
+
+
     Args:
 
         my_list_1 (list): The first list.
@@ -11,6 +13,8 @@ def list_division(my_list_1, my_list_2, list_length):
         my_list_2 (list): The second list.
 
         list_length (int): The number of elements to divide.
+
+
 
     Returns:
 
