@@ -1,14 +1,10 @@
 #include <Python.h>
 
-
-
 void print_python_list(PyObject *p);
 
 void print_python_bytes(PyObject *p);
 
 void print_python_float(PyObject *p);
-
-
 
 /**
 
@@ -54,8 +50,6 @@ void print_python_list(PyObject *p)
 
 	}
 
-
-
 	printf("[*] Size of the Python List = %ld\n", size);
 
 	printf("[*] Allocated = %ld\n", alloc);
@@ -81,8 +75,6 @@ void print_python_list(PyObject *p)
 	}
 
 }
-
-
 
 /**
 
@@ -118,13 +110,9 @@ void print_python_bytes(PyObject *p)
 
 	}
 
-
-
 	printf("  size: %ld\n", ((PyVarObject *)p)->ob_size);
 
 	printf("  trying string: %s\n", bytes->ob_sval);
-
-
 
 	if (((PyVarObject *)p)->ob_size >= 10)
 
@@ -155,8 +143,6 @@ void print_python_bytes(PyObject *p)
 	}
 
 }
-
-
 
 /**
 
@@ -194,8 +180,6 @@ void print_python_float(PyObject *p)
 
 	}
 
-
-
 	buffer = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
 
 			Py_DTSF_ADD_DOT_0, NULL);
@@ -204,3 +188,4 @@ void print_python_float(PyObject *p)
 
 	PyMem_Free(buffer);
 
+}
