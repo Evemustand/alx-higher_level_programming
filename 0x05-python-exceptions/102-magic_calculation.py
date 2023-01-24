@@ -15,7 +15,7 @@ def magic_calculation(a, b):
 
                 result += a ** b / i
 
-        except (Too far):
+        except (result):
 
             result = b + a
 
